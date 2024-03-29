@@ -1,0 +1,159 @@
+@import 'fonts.css';
+
+:root {
+    /* --box1: #F7418F;
+    --box2: #FC819E;
+    --box3: #fc8381;
+    --box4: #fc7768; */
+    --lines: #000000;
+    --text: #000000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+    font-size: 200%;
+    color: var(--text);
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    min-height: 100vh;
+}
+
+.grid__item {
+    outline: 2px solid var(--lines);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.grid__item--2 {
+    margin-top: 0%;
+    position: relative;
+    grid-column: 2 / span 3;
+    grid-row: span 2;
+    text-align: left;
+    margin-top: 0%;
+}
+
+.side{
+    position: absolute;
+    rotate: -60deg;
+    align-self: center;
+    justify-self: center;
+    margin-left: 10rem;
+}
+
+.side1 {
+    position: absolute;
+    top: 56%;
+    left: 35%;
+    transform: skewY(30deg);
+    transform-origin: top left;
+}
+
+.side2 {
+    position: absolute;
+    top: 90%; /* Adjust to match .side1 */
+    left: 54%; /* Adjust to bring closer to .side1 */
+    transform: skewX(30deg) skewY(40deg); /* Reduce skew angle to make text less stretched */
+    rotate: 60deg; /* Rotate text to make it upright */
+    letter-spacing: 0rem; 
+    font-size: 1em;
+}
+
+.side3 {
+    position: absolute;
+    top: 42.5rem; /* Adjust to match .side1 */
+    left: 16rem; /* Adjust to bring closer to .side1 */
+    transform: skewX(5deg) skewY(-30deg); /* Reduce skew angle to make text less stretched */
+    rotate: 60deg; /* Rotate text to make it upright */
+    letter-spacing: 0rem; 
+    font-size: 1em;
+}
+
+.side4 {
+    position: relative; /* Make the .side4 element a positioning context for its children */
+}
+
+.side4 span {
+    position: absolute;
+    font-size: 1em;
+    letter-spacing: 0rem;
+}
+.word1 { top: 0rem; left: 0rem; }
+.word2 { top: 3rem; left: 3rem; }
+.word3 { top: 6rem; left: 6rem; }
+.word4 { top: 9rem; left: 9rem; }
+.word5 { top: 12rem; left: 12rem; }
+.word6 { top: 15rem; left: 15rem; }
+.word7 { top: 18rem; left: 18rem; }
+.word8 { top: 21rem; left: 21rem; }
+.word9 { top: 24rem; left: 24rem; }
+.word10 { top: 27rem; left: 27rem; }
+.word11 { top: 30rem; left: 30rem; }
+
+
+
+
+.grid__item--3 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.grid__item--6 {
+    grid-column: span 2;
+}
+
+.grid__item--7 {
+    grid-column: span 3;
+}
+
+.grid__item--9 {
+    grid-column: span 2;
+}
+
+.grid__item--11 {
+    grid-column: span 3;
+}
+
+.grid__item--12 {
+    grid-row: span 2;
+}
+
+.grid__item--13 {
+    grid-row: span 2;
+}
+
+.grid__item--16 {
+    grid-column: span 2;
+}
+
+
+.grid__item:nth-child(4n) {
+    background-color: var(--box3);
+}
+
+.grid__item:nth-child(4n+1) {
+    background-color: var(--box2);
+}
+
+.grid__item:nth-child(4n+2) {
+    background-color: var(--box1);
+}
+
+.grid__item:nth-child(4n+3) {
+    background-color: var(--box4);
+}

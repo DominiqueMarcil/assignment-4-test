@@ -1,0 +1,19 @@
+.mendl-sans {
+    font-family: "mendl-sans-variable",sans-serif;
+    font-variation-settings: 'wght' 447, 'STYL' 0;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .mendl-sans-variable {
+    font-family: "mendl-sans-variable",sans-serif;
+    font-variation-settings: 'wght' 447, 'STYL' 1;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
