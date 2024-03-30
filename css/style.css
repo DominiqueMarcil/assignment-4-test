@@ -39,6 +39,7 @@ body {
 }
 
 
+
 .grid__item--2 {
     margin-top: 0%;
     position: relative;
@@ -237,6 +238,23 @@ body {
 .grid__item--3 {
     grid-column: span 2;
     grid-row: span 2;
+    position: absolute;
+    top: 260%; /* Adjust to match .side1 */
+    left: 120%; /* Adjust to bring closer to .side1 */
+    transform: skewX(40deg);
+    transform-origin: top left;
+    letter-spacing: 0rem; 
+    font-size: 1em;
+}
+
+.side5 {
+    position: absolute;
+    top: 46rem;
+    left: 0rem;
+    text-align: center;
+    letter-spacing: 0rem; 
+    font-size: 2em;
+    transform: skewX(0deg) skewY(-27deg); /* Reduce skew angle to make text less stretched */
 }
 
 .grid__item--6 {
