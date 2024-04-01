@@ -21,6 +21,7 @@ body {
     font-size: 200%;
     color: var(--text);
     position: relative;
+    overflow-x: hidden;
 }
 
 
@@ -78,7 +79,7 @@ body {
 
 .side3 {
     position: absolute;
-    top: 42.5rem; /* Adjust to match .side1 */
+    top: 45rem; /* Adjust to match .side1 */
     left: 16rem; /* Adjust to bring closer to .side1 */
     transform: skewX(5deg) skewY(-30deg); /* Reduce skew angle to make text less stretched */
     rotate: 60deg; /* Rotate text to make it upright */
@@ -286,23 +287,9 @@ body {
     grid-column: span 2;
 }
 
-/* Styles for the falling word */
-.despair-word {
-    position: absolute;
-    top: -50px; /* Start above the viewport */
-    left: 50%; /* Start from the center of the viewport */
-    transform: translateX(-50%);
-    font-size: 24px;
-    color: red; /* Customize as needed */
-    animation: fallAnimation 5s linear infinite; /* Adjust duration and timing function as needed */
+.rain-container {
+  height: 100vh;
+  /* overflow: hidden;
+  position: relative; */
 }
 
-/* Keyframes for the falling animation */
-@keyframes fallAnimation {
-    0% {
-        top: -50px;
-    }
-    100% {
-        top: 100vh; /* Falls until it's out of view */
-    }
-}
