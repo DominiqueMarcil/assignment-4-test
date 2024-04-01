@@ -60,8 +60,8 @@ body {
 
 .side1 {
     position: absolute;
-    top: 56%;
-    left: 35%;
+    top: 60%;
+    left: 30%;
     transform: skewY(30deg);
     transform-origin: top left;
 }
@@ -286,19 +286,23 @@ body {
     grid-column: span 2;
 }
 
-
-.grid__item:nth-child(4n) {
-    background-color: var(--box3);
+/* Styles for the falling word */
+.despair-word {
+    position: absolute;
+    top: -50px; /* Start above the viewport */
+    left: 50%; /* Start from the center of the viewport */
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: red; /* Customize as needed */
+    animation: fallAnimation 5s linear infinite; /* Adjust duration and timing function as needed */
 }
 
-.grid__item:nth-child(4n+1) {
-    background-color: var(--box2);
-}
-
-.grid__item:nth-child(4n+2) {
-    background-color: var(--box1);
-}
-
-.grid__item:nth-child(4n+3) {
-    background-color: var(--box4);
+/* Keyframes for the falling animation */
+@keyframes fallAnimation {
+    0% {
+        top: -50px;
+    }
+    100% {
+        top: 100vh; /* Falls until it's out of view */
+    }
 }
