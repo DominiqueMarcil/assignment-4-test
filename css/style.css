@@ -61,15 +61,15 @@ body {
 .side1 {
     position: absolute;
     top: 60%;
-    left: 30%;
+    left: 35%;
     transform: skewY(30deg);
     transform-origin: top left;
 }
 
 .side2 {
     position: absolute;
-    top: 90%; /* Adjust to match .side1 */
-    left: 50%; /* Adjust to bring closer to .side1 */
+    top: 95%; /* Adjust to match .side1 */
+    left: 54%; /* Adjust to bring closer to .side1 */
     transform: skewX(30deg) skewY(40deg); /* Reduce skew angle to make text less stretched */
     rotate: 60deg; /* Rotate text to make it upright */
     letter-spacing: 0rem; 
