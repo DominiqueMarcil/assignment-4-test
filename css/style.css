@@ -20,6 +20,7 @@ body {
     text-align: center;
     font-size: 200%;
     color: var(--text);
+    position: relative;
 }
 
 
