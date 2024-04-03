@@ -48,7 +48,8 @@ body {
     grid-column: 2 / span 3;
     grid-row: span 2;
     text-align: left;
-    margin-top: 0%;
+    margin-top: -50%;
+    transform: scale(50%);
 }
 
 .side{
@@ -62,25 +63,25 @@ body {
 .side1 {
     position: absolute;
     top: 60%;
-    left: 35%;
+    left: 33%;
     transform: skewY(30deg);
     transform-origin: top left;
 }
 
 .side2 {
     position: absolute;
-    top: 95%; /* Adjust to match .side1 */
-    left: 54%; /* Adjust to bring closer to .side1 */
+    top: 80%; /* Adjust to match .side1 */
+    left: 56%; /* Adjust to bring closer to .side1 */
     transform: skewX(30deg) skewY(40deg); /* Reduce skew angle to make text less stretched */
     rotate: 60deg; /* Rotate text to make it upright */
-    letter-spacing: 0rem; 
+    letter-spacing: -0.03rem; 
     font-size: 1em;
 }
 
 .side3 {
     position: absolute;
-    top: 45rem; /* Adjust to match .side1 */
-    left: 16rem; /* Adjust to bring closer to .side1 */
+    top: 52rem; /* Adjust to match .side1 */
+    left: 15rem; /* Adjust to bring closer to .side1 */
     transform: skewX(5deg) skewY(-30deg); /* Reduce skew angle to make text less stretched */
     rotate: 60deg; /* Rotate text to make it upright */
     letter-spacing: 0rem; 
@@ -95,20 +96,8 @@ body {
     position: absolute;
     font-size: 1em;
     letter-spacing: 0rem;
-    /* animation: moveLeftRight 5s linear infinite; */
 }
-/* 
-@keyframes moveLeftRight {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-100%);
-    }
-    100% {
-        transform: translateY(0);
-    }
-} */
+
 
 .word1 { top: 0rem; left: 0rem; animation: moveLeftRight 12s infinite;}
 @keyframes moveLeftRight {
@@ -241,22 +230,40 @@ body {
     grid-column: span 2;
     grid-row: span 2;
     position: absolute;
-    top: 260%; /* Adjust to match .side1 */
-    left: 120%; /* Adjust to bring closer to .side1 */
+    top: 72rem; /* Adjust to match .side1 */
+    left: 50rem; /* Adjust to bring closer to .side1 */
     transform: skewX(40deg);
     transform-origin: top left;
     letter-spacing: 0rem; 
     font-size: 1em;
 }
 
-.side5 {
+/* .side5 {
     position: absolute;
     top: 46rem;
     left: 0rem;
     text-align: center;
     letter-spacing: 0rem; 
     font-size: 2em;
-    transform: skewX(0deg) skewY(-27deg); /* Reduce skew angle to make text less stretched */
+    transform: skewX(0deg) skewY(-27deg); /* Reduce skew angle to make text less stretched} */
+
+
+.side5 {
+    position: relative;
+    position: absolute;
+    font-size: 1em;
+    letter-spacing: 0rem;
+}
+
+.side5 span {
+    /* display: inline-block; */
+    transition: font-size 1s ease-in-out;
+}
+
+.side5 span:hover {
+    text-align: center;
+    letter-spacing: 0rem; 
+    font-size: 1.5em;
 }
 
 .grid__item--6 {
@@ -286,10 +293,3 @@ body {
 .grid__item--16 {
     grid-column: span 2;
 }
-
-.rain-container {
-  height: 100vh;
-  /* overflow: hidden;
-  position: relative; */
-}
-
