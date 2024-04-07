@@ -48,7 +48,7 @@ body {
     grid-column: 2 / span 3;
     grid-row: span 2;
     text-align: left;
-    margin-top: -50%;
+    margin-top: -60%;
     transform: scale(50%);
 }
 
@@ -80,8 +80,8 @@ body {
 
 .side3 {
     position: absolute;
-    top: 52rem; /* Adjust to match .side1 */
-    left: 15rem; /* Adjust to bring closer to .side1 */
+    top: 54rem; /* Adjust to match .side1 */
+    left: 16rem; /* Adjust to bring closer to .side1 */
     transform: skewX(5deg) skewY(-30deg); /* Reduce skew angle to make text less stretched */
     rotate: 60deg; /* Rotate text to make it upright */
     letter-spacing: 0rem; 
@@ -238,14 +238,38 @@ body {
     font-size: 1em;
 }
 
-/* .side5 {
-    position: absolute;
-    top: 46rem;
-    left: 0rem;
+.grid__item--5 {
+    position: fixed;
     text-align: center;
     letter-spacing: 0rem; 
-    font-size: 2em;
-    transform: skewX(0deg) skewY(-27deg); /* Reduce skew angle to make text less stretched} */
+    font-size: 1rem;
+    bottom: 0;
+    right: 1rem;
+    background-color: #9b9b9b; /* Green background */
+    border: none; /* No border */
+    color: rgb(0, 0, 0); /* White text */
+    padding: 15px 32px; /* Some padding */
+    text-decoration: none; /* No underline */
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; /* Mouse pointer on hover */
+    border-radius: 12px;
+}
+
+.grid__item--5 a {
+    color: inherit; /* Inherits the color of the parent element (white) */
+    text-decoration: none; /* No underline */
+}
+
+
+.text {
+    position: relative;
+    font-size: 0.5em;
+    letter-spacing: 0rem;
+    display: block; /* Add this line */
+}
+
 
 
 .side5 {
